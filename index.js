@@ -9,10 +9,15 @@ catNetrcFile(inVars);
 gitCredentials(inVars);
 createProcfile(inVars);
 loginHeroku();
+console.log("1");
 selectHerokuApp(inVars);
+console.log("2");
 addBuildpacks(inVars);
+console.log("3");
 addConfigs(inVars);
+console.log("4");
 deploy(inVars);
+console.log("5");
 
 function gitCredentials({email}){
   execComm(`git config --global user.name "Automated Heroku Deploy"`);
