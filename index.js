@@ -12,7 +12,6 @@ loginHeroku();
 selectHerokuApp(inVars);
 addBuildpacks(inVars);
 addConfigs(inVars);
-addDynamicFiles(inVars);
 deploy(inVars);
 
 function gitCredentials({email}){
